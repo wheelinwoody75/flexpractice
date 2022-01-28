@@ -6,13 +6,15 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
-}
+  display: flex;
+  }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
+  flex: 1 auto
+  }
 
 .profile-image {
   background: rebeccapurple;
@@ -20,6 +22,8 @@ body {
   border-radius: 50%;
   width: 48px;
   height:  48px;
+  flex: 1 auto;
+
 }
 
 .logo {
@@ -29,12 +33,18 @@ body {
   font-style: italic;
 }
 
+.rightside {
+    display: flex;
+    justify-content: center;
+    }
+
 button {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  flex: 1 auto;
 }
 
 a {
@@ -45,4 +55,7 @@ a {
 
 ul {
   list-style-type: none;
-}
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  }
